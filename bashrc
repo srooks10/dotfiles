@@ -101,3 +101,26 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+#
+# customisation starts here
+#
+
+export PYTHONPATH=~/.local
+export PATH=~/.local/bin:$PATH
+
+# for virtualenv
+export VIRTUALENV_USE_DISTRIBUTE=true
+
+# for virtualenvwrapper
+export WORKON_HOME=~/Envs
+export VIRTUALENVWRAPPER_PYTHON="$(\which python3)"
+source ~/.local/bin/virtualenvwrapper.sh
+
+# for pip
+eval "`pip completion --bash`" # add pip completion
+export PIP_REQUIRE_VIRTUALENV=true
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_DOWNLOAD_CACHE=~/Downloads/pip_download_cache
+
+
