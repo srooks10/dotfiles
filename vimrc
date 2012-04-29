@@ -11,3 +11,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 
+" =============== Load settings =========================
+for f in split(glob(expand("<sfile>:p:h") . "/vim/plugin/settings/*.vim"), '\n')
+  exe 'source' f
+endfor
