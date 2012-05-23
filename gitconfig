@@ -1,3 +1,6 @@
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore.global
 [color]
     ui = true
 [color "branch"]
