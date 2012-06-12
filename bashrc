@@ -106,6 +106,10 @@ fi
 # customisation starts here
 #
 
+# customisation local to one computer only (not in dotfiles)
+if [ -f ~/.bashrc.local ]; then
+    . ~/.bashrc.local
+fi
 export PYTHONPATH=~/.local
 export PATH=~/.local/bin:$PATH
 
