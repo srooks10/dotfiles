@@ -1,7 +1,3 @@
-" Change leader to a comma because the backslash is too far away
-" That means all \x commands turn into ,x
-let mapleader=","
-
 " ==================================================
 " hide matches on <leader>space
 " ==================================================
