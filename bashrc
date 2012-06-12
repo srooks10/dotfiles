@@ -117,8 +117,8 @@ export PATH=~/.local/bin:$PATH
 export VIRTUALENV_USE_DISTRIBUTE=true
 
 # for virtualenvwrapper
-export WORKON_HOME=~/Envs
-export VIRTUALENVWRAPPER_PYTHON="$(\which python3)"
+#export WORKON_HOME=~/Envs  # in .bashrc.local
+#export VIRTUALENVWRAPPER_PYTHON="$(\which python3)"  # in bashrc.local
 source ~/.local/bin/virtualenvwrapper.sh
 
 # for pip
