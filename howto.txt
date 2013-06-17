@@ -1,0 +1,19 @@
+How to add a vim plugin
+=======================
+
+I am using Pathogen with plugins as submodules. To add a plugin, for example vim-pandoc (notice name prefix removed):
+cd ~/Dotfiles
+git submodule add https://github.com/vim-pandoc/vim-pandoc.git vim/bundle/pandoc
+git submodule update --init
+
+then commit
+
+git submodule cheat sheet
+=========================
+
+to pull changes from submodule:
+git pull --recurse-submodules
+git submodule update --recursive
+
+See also http://blog.jacius.info/git-submodule-cheat-sheet/
+
