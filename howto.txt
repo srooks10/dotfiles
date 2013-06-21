@@ -8,8 +8,15 @@ git submodule update --init
 
 then commit
 
-git submodule cheat sheet
-=========================
+git submodule
+=============
+
+http://blogs.atlassian.com/2013/03/git-submodules-workflows-tips
+
+Notice that to delete a submodule, from git 1.8.3, one can use `git submodule deinit`
+
+cheat sheet
+-----------
 
 to pull changes from submodule:
 git pull --recurse-submodules
